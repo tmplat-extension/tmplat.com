@@ -1,0 +1,313 @@
+---
+layout: guide
+title: Operations | Guide
+header: Guide
+header_addon: How to use operations
+sidebar_url: /guide/operations/
+description: Get to grips with using operations in the Template extension
+keywords: template, browser, extension, guide, documentation, help, operations
+---
+<p><strong>Operations</strong> are performed using sections, accepting its rendered contents as an argument.</p>
+
+<table class="table table-condensed table-bordered table-striped">
+  <caption id="definitions">Definitions</caption>
+
+  <thead>
+    <tr>
+      <th style="width: 25%">Name</th>
+      <th style="width: 15%">Argument</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td id="capitalise"><a name="capitalize"></a>capitalise</td>
+      <td>Text</td>
+      <td>Transform the text provided into title case</td>
+    </tr>
+    <tr>
+      <td id="cookie">cookie</td>
+      <td>Text</td>
+      <td>Get the value for the cookie with the name provided</td>
+    </tr>
+    <tr>
+      <td id="date-time">dateTime</td>
+      <td>Text</td>
+      <td>
+        Format the current date &amp; time using the pattern provided
+        <br>
+        (see <a href="http://php.net/manual/en/function.date.php#refsect1-function.date-parameters">PHPs date</a> for
+        more details)
+      </td>
+    </tr>
+    <tr>
+      <td id="decode">decode</td>
+      <td>Text</td>
+      <td>Decode the previously encoded text provided</td>
+    </tr>
+    <tr>
+      <td id="encode">encode</td>
+      <td>Text</td>
+      <td>Encode the text provided so that it can be safely used in a query string</td>
+    </tr>
+    <tr>
+      <td id="escape">escape <span class="label label-success pull-right">New</span></td>
+      <td>Text</td>
+      <td>Escape the text provided so that it can be safely inserted into HTML</td>
+    </tr>
+    <tr>
+      <td id="fparam">fparam</td>
+      <td>Text</td>
+      <td>Get the value of the parameter provided from within the hash fragment</td>
+    </tr>
+    <tr>
+      <td id="fsegment">fsegment</td>
+      <td>Number</td>
+      <td>Get the segment at the index provided from within the hash fragment</td>
+    </tr>
+    <tr>
+      <td id="last-modified">lastModified <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text</td>
+      <td>
+        Format the last modified date &amp; time using the pattern provided
+        <br>
+        (see <a href="http://php.net/manual/en/function.date.php#refsect1-function.date-parameters">PHPs date</a> for
+        more details)
+      </td>
+    </tr>
+    <tr>
+      <td id="length">length</td>
+      <td>Text</td>
+      <td>Get the character length of the text provided</td>
+    </tr>
+    <tr>
+      <td id="lower-case">lowerCase</td>
+      <td>Text</td>
+      <td>Transform the text provided into lower case</td>
+    </tr>
+    <tr>
+      <td id="meta">meta <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text</td>
+      <td>Get the content of the page's meta information with the text provided</td>
+    </tr>
+    <tr>
+      <td id="param">param</td>
+      <td>Text</td>
+      <td>Get the value of the parameter provided</td>
+    </tr>
+    <tr>
+      <td id="segment">segment</td>
+      <td>Number</td>
+      <td>Get the segment at the index provided</td>
+    </tr>
+    <tr>
+      <td id="select">select <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>Get the text of first matching element</td>
+    </tr>
+    <tr>
+      <td id="select-all">selectAll <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>Concatenate the text of all matching elements</td>
+    </tr>
+    <tr>
+      <td id="select-all-html">selectAllHTML <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>Concatenate the HTML contents of all matching elements</td>
+    </tr>
+    <tr>
+      <td id="select-all-markdown">selectAllMarkdown <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>
+        Concatenate the contents of all matching elements as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>
+      </td>
+    </tr>
+    <tr>
+      <td id="select-html">selectHTML <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>Get the HTML contents of the first matching element</td>
+    </tr>
+    <tr>
+      <td id="select-markdown">selectMarkdown <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>Text <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>
+        Get the contents of the first matching element as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>
+      </td>
+    </tr>
+    <tr>
+      <td id="shorten">shorten</td>
+      <td>Text</td>
+      <td>Shorten the URL provided using the active URL shortener</td>
+    </tr>
+    <tr>
+      <td id="tidy">tidy</td>
+      <td>Text</td>
+      <td>
+        Reduce all of the joined spaces and tabs into single spaces within the text provided before removing all leading
+        and trailing whitespace
+      </td>
+    </tr>
+    <tr>
+      <td id="trim">trim</td>
+      <td>Text</td>
+      <td>Remove all leading and trailing whitespace from the text provided</td>
+    </tr>
+    <tr>
+      <td id="trim-left">trimLeft</td>
+      <td>Text</td>
+      <td>Remove all leading whitespace from the text provided</td>
+    </tr>
+    <tr>
+      <td id="trim-right">trimRight</td>
+      <td>Text</td>
+      <td>Remove all trailing whitespace from the text provided</td>
+    </tr>
+    <tr>
+      <td id="unescape">unescape <span class="label label-success pull-right">New</span></td>
+      <td>Text</td>
+      <td>
+        The opposite of <a href="#escape">escape</a>; Replace escaped characters in text provided with their unescaped
+        counterparts
+      </td>
+    </tr>
+    <tr>
+      <td id="upper-case">upperCase</td>
+      <td>Text</td>
+      <td>Transform the text provided into upper case</td>
+    </tr>
+    <tr>
+      <td id="word-count">wordCount <span class="label label-success pull-right">New</span></td>
+      <td>Text</td>
+      <td>Get the number of words in the text provided</td>
+    </tr>
+    <tr>
+      <td id="xpath">xpath <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>Get the first result for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a> expression as text</td>
+    </tr>
+    <tr>
+      <td id="xpath-all">xpathAll <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>Concatenate all results for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a> expression</td>
+    </tr>
+    <tr>
+      <td id="xpath-all-html">xpathAllHTML <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>
+        Concatenate the HTML contents of all results for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a>
+        expression
+      </td>
+    </tr>
+    <tr>
+      <td id="xpath-all-markdown">xpathAllMarkdown <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>
+        Concatenate the contents of all results for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a>
+        expression as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>
+      </td>
+    </tr>
+    <tr>
+      <td id="xpath-html">xpathHTML <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>
+        Get the HTML contents of the first result for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a>
+        expression
+      </td>
+    </tr>
+    <tr>
+      <td id="xpath-markdown">xpathMarkdown <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>Text <a href="#ref-3" class="bold">&sup3;</a></td>
+      <td>
+        Get the contents of the first result for the <a href="http://en.wikipedia.org/wiki/XPath">XPath</a> expression
+        as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>
+      </td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <ul class="unstyled" style="margin-bottom: 0">
+          <li>
+            <a href="#ref-1" id="ref-1" class="bold">&sup1;</a>
+            <em>Not available on internal Chrome pages or the <a href="https://chrome.google.com/webstore/">Chrome Web Store</a></em>
+          </li>
+          <li>
+            <a href="#ref-2" id="ref-2" class="bold">&sup2;</a>
+            <em>Learn more about the <a href="http://www.w3.org/TR/selectors-api/">Selectors API</a></em>
+          </li>
+          <li>
+            <a href="#ref-3" id="ref-3" class="bold">&sup3;</a>
+            <em>Learn more about the <a href="http://www.w3.org/TR/xpath/">XPath API</a></em>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<div class="accordion">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-target="#examples">Examples</a>
+    </div>
+    <div id="examples" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <p>This page's information will be used in the following examples.</p>
+        <p>
+          To output the current date &amp; time in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format
+          you would use;
+        </p>
+{% highlight html %}
+Today is {#dateTime}Y-m-d\TH:i:sP{/dateTime}.
+{% endhighlight %}
+        <p>
+          Also, the <em>c</em> parameter would also have the same outcome in this case. If you wanted to safely pass the
+          whole URL as a parameter in a query string;
+        </p>
+{% highlight html %}
+http://example.com/something.do?url={#encode}{url}{/encode}
+{% endhighlight %}
+        <p>This escapes all of the necessary characters within URL and outputs the following;</p>
+{% highlight html %}
+http://example.com/something.do?url=https%3A%2F%2Ftemplate-extension.org%2Fguide%2Foperations%2F
+{% endhighlight %}
+        <p>To access the last segment of the URL's path;</p>
+{% highlight html %}
+I am currently viewing "{#segment}-1{/segment}".
+{% endhighlight %}
+        <p>Would render the following output;</p>
+{% highlight html %}
+I am currently viewing "operations".
+{% endhighlight %}
+        <p>
+          Let's pretend again that the query string for this page is <em>foo=bar&amp;fu=baz</em>. Accessing the value of
+          the <em>foo</em> parameter is as simple as the following;
+        </p>
+{% highlight html %}
+The value of foo is "{#param}foo{/param}".
+{% endhighlight %}
+        <p>This would cause the following output to be rendered;</p>
+{% highlight html %}
+The value of foo is "bar".
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="well">
+  <h3 id="notes">Notes</h3>
+  <p>
+    The following notes only apply to <a href="#segment">segment</a> and <a href="#fsegment">fsegment</a> operations;
+  </p>
+  <ul>
+    <li>
+      The count is not zero-indexed like an array (e.g. <code>{#segment}1{/segment}</code> returns the first segment)
+    </li>
+    <li>
+      The argument can be negative values, in which case it will count back from the end of the path rather than
+      forwards from the start
+    </li>
+  </ul>
+</div>

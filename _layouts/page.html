@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% if page.header or page.sub_header %}
+  <header class="page-header">
+    {% if page.header %}
+      <h1>{{ page.header | escape }}{% if page.header_addon %} <small>{{ page.header_addon | escape }}</small>{% endif %}</h1>
+    {% endif %}
+    {% if page.sub_header %}
+      <p class="lead">{{ page.sub_header | escape }}</p>
+    {% endif %}
+  </header>
+{% endif %}
+
+{{ content }}

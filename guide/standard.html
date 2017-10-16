@@ -1,0 +1,283 @@
+---
+layout: guide
+title: Standard | Guide
+header: Guide
+header_addon: How to use standard variables
+sidebar_url: /guide/standard/
+description: Get to grips with using standard variables in the Template extension
+keywords: template, browser, extension, guide, documentation, help, standard, variables
+---
+<p>
+  <strong>Standard</strong> variables are generally accessed using simple tags. However, sections (including inverted)
+  can also be used to add conditions.
+</p>
+
+<table class="table table-condensed table-bordered table-striped">
+  <caption id="definitions">Definitions</caption>
+
+  <thead>
+    <tr>
+      <th style="width: 25%">Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td id="author">author <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The author from the page's meta information</td>
+    </tr>
+    <tr>
+      <td id="base">base</td>
+      <td>The base domain (e.g. <em>https://www.example.com:443</em>)</td>
+    </tr>
+    <tr>
+      <td id="browser">browser</td>
+      <td>The name of the browser (i.e. <em>Chrome</em>)</td>
+    </tr>
+    <tr>
+      <td id="browser-version">browserVersion</td>
+      <td>The current version of the browser (e.g. <em>16.0.912.77</em>)</td>
+    </tr>
+    <tr>
+      <td id="character-set">characterSet <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>
+        The <a href="http://www.iana.org/assignments/character-sets">character set</a> used by the page (e.g.
+        <em>UTF-8</em>)
+      </td>
+    </tr>
+    <tr>
+      <td id="cookies-enabled">cookiesEnabled</td>
+      <td>Whether or not cookies are enabled</td>
+    </tr>
+    <tr>
+      <td id="count">count</td>
+      <td>The total number of templates</td>
+    </tr>
+    <tr>
+      <td id="custom-count">customCount</td>
+      <td>The total number of user-defined templates</td>
+    </tr>
+    <tr>
+      <td id="date-time">dateTime</td>
+      <td>The current date &amp; time in <a href="http://www.faqs.org/rfcs/rfc2822.html">RFC 2822</a> format</td>
+    </tr>
+    <tr>
+      <td id="depth">depth</td>
+      <td>The colour depth in bits (e.g. <em>24</em>)</td>
+    </tr>
+    <tr>
+      <td id="description">description <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The description from the page's meta information</td>
+    </tr>
+    <tr>
+      <td id="directory">directory</td>
+      <td>The directory part of the path (e.g. <em>/folder/dir/</em>)</td>
+    </tr>
+    <tr>
+      <td id="favicon">favicon</td>
+      <td>The whole URL of the page's favicon</td>
+    </tr>
+    <tr>
+      <td id="file">file</td>
+     <td>The basename of the file (e.g. <em>index.html</em>)</td>
+    </tr>
+    <tr>
+      <td id="fragment"><a name="anchor"></a>fragment/anchor</td>
+      <td>The entire string after the hash (#) symbol</td>
+    </tr>
+    <tr>
+      <td id="host">host</td>
+      <td>For example; <em>www.example.com</em>, <em>localhost</em></td>
+    </tr>
+    <tr>
+      <td id="html">html <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>The entire HTML contents of the page</td>
+    </tr>
+    <tr>
+      <td id="java">java</td>
+      <td>Whether or not <a href="http://www.java.com">Java</a> is enabled</td>
+    </tr>
+    <tr>
+      <td id="last-modified">lastModified <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>
+        The last modified date &amp; time of the page in <a href="http://www.faqs.org/rfcs/rfc2822.html">RFC 2822</a>
+        format
+      </td>
+    </tr>
+    <tr>
+      <td id="link-html">linkHTML <a href="#ref-1" class="bold">&sup1;</a> <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>The HTML behind the contextual (right-clicked) link</td>
+    </tr>
+    <tr>
+      <td id="link-markdown">linkMarkdown <a href="#ref-1" class="bold">&sup1;</a> <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>
+        The contents of the contextual (right-clicked) link formatted as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>
+      </td>
+    </tr>
+    <tr>
+      <td id="link-text">linkText <a href="#ref-1" class="bold">&sup1;</a> <a href="#ref-2" class="bold">&sup2;</a></td>
+      <td>The contextual (right-clicked) link text</td>
+    </tr>
+    <tr>
+      <td id="locale">locale <span class="label label-success pull-right">New</span></td>
+      <td>
+        The <a href="http://en.wikipedia.org/wiki/ISO_639_macrolanguage">ISO 639</a> code for the detected page language
+      </td>
+    </tr>
+    <tr>
+      <td id="markdown">markdown <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>The entire contents of the page as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a></td>
+    </tr>
+    <tr>
+      <td id="offline">offline</td>
+      <td>Whether or not you are currently offline</td>
+    </tr>
+    <tr>
+      <td id="original-title">originalTitle</td>
+      <td>
+        The original title of the page (may be different than <a href="#title">title</a> if a supported extension was
+        detected and the value of <a href="#title">title</a> was extracted from this)
+      </td>
+    </tr>
+    <tr>
+      <td id="original-url">originalUrl</td>
+      <td>
+        The original whole URL being parsed (may be different than <a href="#url">url</a> if a supported extension was
+        detected and the value of <a href="#url">url</a> was extracted from this)
+      </td>
+    </tr>
+    <tr>
+      <td id="os">os</td>
+      <td>The family of your operating system (i.e. <em>Windows</em>, <em>Mac</em>, <em>Linux</em>)</td>
+    </tr>
+    <tr>
+      <td id="page-height">pageHeight <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The height of the page</td>
+    </tr>
+    <tr>
+      <td id="page-width">pageWidth <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The width of the page</td>
+    </tr>
+    <tr>
+      <td id="path">path</td>
+      <td>The path to the file (e.g. <em>/folder/dir/index.html</em>)</td>
+    </tr>
+    <tr>
+      <td id="port">port</td>
+      <td>For example; <em>80</em>, <em>443</em></td>
+    </tr>
+    <tr>
+      <td id="protocol">protocol</td>
+      <td>For example; <em>http</em>, <em>https</em>, <em>file</em></td>
+    </tr>
+    <tr>
+      <td id="query">query</td>
+      <td>The entire query string if it exists (e.g. <em>item=value&amp;item2=value2</em>)</td>
+    </tr>
+    <tr>
+      <td id="referrer">referrer <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The URL of the referring page</td>
+    </tr>
+    <tr>
+      <td id="relative">relative</td>
+      <td>
+        The relative path to the file including the query string (e.g. <em>/folder/dir/index.html?item=value</em>)
+      </td>
+    </tr>
+    <tr>
+      <td id="screen-height">screenHeight</td>
+      <td>The height of the screen</td>
+    </tr>
+    <tr>
+      <td id="screen-width">screenWidth</td>
+      <td>The width of the screen</td>
+    </tr>
+    <tr>
+      <td id="selection">selection <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The currently selected text</td>
+    </tr>
+    <tr>
+      <td id="selection-html">selectionHTML <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The HTML behind the current selection</td>
+    </tr>
+    <tr>
+      <td id="selection-markdown">selectionMarkdown <a href="#ref-1" class="bold">&sup1;</a></td>
+      <td>The current selection formatted as <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a></td>
+    </tr>
+    <tr>
+      <td id="text">text <a href="#ref-1" class="bold">&sup1;</a><span class="label label-success pull-right">New</span></td>
+      <td>The entire text of the page</td>
+    </tr>
+    <tr>
+      <td id="title">title</td>
+      <td>
+        The title of the page or <a href="#url">url</a> if the title could not be detected (e.g. page had not finished
+        loading)
+      </td>
+    </tr>
+    <tr>
+      <td id="url">url</td>
+      <td>The whole URL being parsed</td>
+    </tr>
+    <tr>
+      <td id="version">version</td>
+      <td>The installed version of Template (e.g. <em>{{ site.extension.version }}</em>)</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="2">
+        <ul class="unstyled" style="margin-bottom: 0">
+          <li>
+            <a href="#ref-1" id="ref-1" class="bold">&sup1;</a>
+            <em>Not available on internal Chrome pages or the <a href="https://chrome.google.com/webstore/">Chrome Web Store</a></em>
+          </li>
+          <li>
+            <a href="#ref-2" id="ref-2" class="bold">&sup2;</a>
+            <em>Only available when Template is accessed via the context menu of a link</em>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<div class="accordion">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-target="#examples">Examples</a>
+    </div>
+    <div id="examples" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <p>This page's information will be used in the following examples.</p>
+        <p>
+          A great of example of using standard variables is showing the title of the current page along with its meta
+          description, where possible;
+        </p>
+{% highlight html %}
+Title:
+{title}
+Description:
+{#description}{description}{/description}
+{^description}N/A{/description}
+{% endhighlight %}
+        <p>Since this page contains a meta description it will output something like this;</p>
+{% highlight html %}
+Title:
+Standard | Guide | Template
+Description:
+Get to grips with using standard variables in the Template extension
+{% endhighlight %}
+        <p>However, if it didn't you can expect to the see the following;</p>
+{% highlight html %}
+Title:
+Standard | Guide | Template
+Description:
+N/A
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>

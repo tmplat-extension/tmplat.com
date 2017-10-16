@@ -1,0 +1,44 @@
+---
+layout: page
+title: Sitemap
+header: Sitemap
+header_addon: Lost your way?
+description: Sitemap for the Template homepage
+keywords: template, browser, extension, sitemap, pages, posts, site, map
+---
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Pages</h2>
+    <ul class="unstyled">
+      <li><a href="/">Home</a></li>
+      <li><a href="/changes/">Changes</a></li>
+      <li><a href="/docs/">Documentation</a></li>
+      <li><a href="/faq/">Frequently Asked Questions</a></li>
+      <li>
+        <a href="/guide/">Guide</a>
+        <ul>
+          <li><a href="/guide/">Introduction</a></li>
+          <li><a href="/guide/standard/">Standard</a></li>
+          <li><a href="/guide/lists-objects/">Lists &amp; Objects</a></li>
+          <li><a href="/guide/options/">Options</a></li>
+          <li><a href="/guide/operations/">Operations</a></li>
+        </ul>
+      </li>
+      <li><a href="/license/">License</a></li>
+      <li><a href="/permissions/">Permissions</a></li>
+    </ul>
+  </div>
+
+  <div class="span8">
+    <h2>Posts</h2>
+    {% if site.posts == empty %}
+      <em>None... yet!</em>
+    {% else %}
+      <ul class="unstyled">
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,97 @@
+---
+---
+{% assign url_segments = page.url | split: '/' %}
+{% assign url_segments = url_segments | slice: 1, url_segments.size %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.title or layout.title %}
+      <title>
+        {{ page.title | default: layout.title }}
+        {% if paginator and paginator.page > 1 %}(Page {{ paginator.page }}){% endif %}
+        | {{ site.title | escape }}
+      </title>
+    {% else %}
+      <title>{{ site.title | escape }} | {{ site.description | escape }}</title>
+    {% endif %}
+
+    {% seo title=false %}
+    {% feed_meta %}
+
+    <meta name="bitly-verification" content="e8fabfeef4b1">
+
+    {% if page.previous %}
+      <link rel="prev" href="{{ page.previous.url | absolute_url }}">
+    {% endif %}
+    {% if page.next %}
+      <link rel="next" href="{{ page.next.url | absolute_url }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/template.css">
+    {% if layout.resources %}
+      {% for resource in layout.resources %}
+        {% if resource.stylesheet %}
+          <link rel="stylesheet" href="{{ resource.stylesheet }}">
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-144x144-precomposed.png" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-114x114-precomposed.png" sizes="114x114">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-72x72-precomposed.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ site.extension.chrome.id }}">
+  </head>
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/"{% if page.url == '/' %} class="active"{% endif %}><i class="icon-home"></i> Home</a></li>
+          <li><a href="/guide/"{% if url_segments.first == 'guide' %} class="active"{% endif %}><i class="icon-info-sign"></i> Guide</a></li>
+          <li><a href="/docs/"{% if url_segments.first == 'docs' %} class="active"{% endif %}><i class="icon-book"></i> Documentation</a></li>
+          <li><a href="/faq/"{% if url_segments.first == 'faq' %} class="active"{% endif %}><i class="icon-question-sign"></i> FAQ</a></li>
+        </ul>
+        <h3 class="muted">{{ site.title | escape }}</h3>
+      </div>
+
+      <hr class="nav-split">
+
+      <div{% if page.microdata %} itemscope itemtype="{{ page.microdata }}"{% endif %}>
+        {{ content }}
+      </div>
+
+      <hr>
+
+      <footer class="footer">
+        <p class="pull-right">
+          <a href="#" class="btn btn-mini"><i class="icon-chevron-up"></i> Top</a>
+        </p>
+        <p>&copy; {{ site.social.name | escape }} | <a href="/sitemap/">Sitemap</a></p>
+      </footer>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/template.js"></script>
+    {% if layout.resources %}
+      {% for resource in layout.resources %}
+        {% if resource.script %}
+          <script src="{{ resource.script }}"></script>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% include analytics.html %}
+  </body>
+</html>

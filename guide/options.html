@@ -1,0 +1,160 @@
+---
+layout: guide
+title: Options | Guide
+header: Guide
+header_addon: How to use options
+sidebar_url: /guide/options/
+description: Get to grips with using options in the Template extension
+keywords: template, browser, extension, guide, documentation, help, options
+---
+<p>
+  <strong>Options</strong> are variables that represent your current Template settings and are generally accessed in the
+  same way as standard variables.
+</p>
+
+<table class="table table-condensed table-bordered table-striped">
+  <caption id="definitions">Definitions</caption>
+
+  <thead>
+    <tr>
+      <th style="width: 25%">Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td id="bitly">bitly</td>
+      <td>Whether or not <a href="http://bit.ly">bit.ly</a> is the enabled URL shortener</td>
+    </tr>
+    <tr>
+      <td id="bitly-account">bitlyAccount</td>
+      <td>Whether or not you are currently logged in to your <a href="http://bit.ly">bit.ly</a> account</td>
+    </tr>
+    <tr>
+      <td id="googl">googl</td>
+      <td>Whether or not <a href="http://goo.gl">goo.gl</a> is the enabled URL shortener</td>
+    </tr>
+    <tr>
+      <td id="googl-account">googlAccount</td>
+      <td>Whether or not you are currently logged in to your <a href="http://goo.gl">goo.gl</a> account</td>
+    </tr>
+    <tr>
+      <td id="links-target">linksTarget <span class="label label-success pull-right">New</span></td>
+      <td>Whether or not the option to render links with instructions to open them in a new tab/window is enabled</td>
+    </tr>
+    <tr>
+      <td id="links-title">linksTitle <span class="label label-success pull-right">New</span></td>
+      <td>Whether or not the option to render links with hover text is enabled</td>
+    </tr>
+    <tr>
+      <td id="markdown-inline">markdownInline <span class="label label-success pull-right">New</span></td>
+      <td>
+        Whether or not the option to render <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> links using the
+        inline style is enabled
+      </td>
+    </tr>
+    <tr>
+      <td id="menu">menu</td>
+      <td>Whether or not the option to show the context (right-click) menu is enabled</td>
+    </tr>
+    <tr>
+      <td id="menu-options">menuOptions</td>
+      <td>Whether or not the <em>Options</em> item is displayed at the bottom of the context (right-click) menu</td>
+    </tr>
+    <tr>
+      <td id="menu-paste">menuPaste</td>
+      <td>
+        Whether or not the Template output is automatically pasted into the field where the context (right-click) menu
+        was activated
+      </td>
+    </tr>
+    <tr>
+      <td id="notifications">notifications</td>
+      <td>Whether or not the option to show desktop notifications is enabled</td>
+    </tr>
+    <tr>
+      <td id="shortcuts">shortcuts</td>
+      <td>Whether or not the option to allow keyboard shortcuts is enabled</td>
+    </tr>
+    <tr>
+      <td id="shortcuts-paste">shortcutsPaste</td>
+      <td>
+        Whether or not the Template output is automatically pasted into the field where the keyboard shortcut was
+        detected
+      </td>
+    </tr>
+    <tr>
+      <td id="toolbar-close">toolbarClose</td>
+      <td>Whether or not the popup is closed immediately after a template is selected</td>
+    </tr>
+    <tr>
+      <td id="toolbar-key">toolbarKey</td>
+      <td>The unique key of the template activated when the toolbar button is clicked</td>
+    </tr>
+    <tr>
+      <td id="toolbar-options">toolbarOptions</td>
+      <td>Whether or not the <em>Options</em> link is displayed at the bottom of the popup</td>
+    </tr>
+    <tr>
+      <td id="toolbar-popup">toolbarPopup</td>
+      <td>Whether or not the popup is shown when the toolbar button is clicked</td>
+    </tr>
+    <tr>
+      <td id="yourls">yourls</td>
+      <td>Whether or not <a href="http://yourls.org">YOURLS</a> is the enabled URL shortener</td>
+    </tr>
+    <tr>
+      <td id="yourls-authentication">yourlsAuthentication</td>
+      <td>
+        The authentication used for the <a href="http://yourls.org">YOURLS</a> service (e.g. <em>advanced</em>,
+        <em>basic</em>, or nothing if <em>none</em>)
+      </td>
+    </tr>
+    <tr>
+      <td id="yourls-password">yourlsPassword</td>
+      <td>The password for the <a href="http://yourls.org">YOURLS</a> service</td>
+    </tr>
+    <tr>
+      <td id="yourls-signature">yourlsSignature</td>
+      <td>The signature for the <a href="http://yourls.org">YOURLS</a> service (e.g. <em>3002a61584</em>)</td>
+    </tr>
+    <tr>
+      <td id="yourls-url">yourlsUrl</td>
+      <td>
+        The URL of the <a href="http://yourls.org">YOURLS</a> service (e.g. <em>http://example.com/yourls-api.php</em>)
+      </td>
+    </tr>
+    <tr>
+      <td id="yourls-username">yourlsUsername</td>
+      <td>The username for the <a href="http://yourls.org">YOURLS</a> service</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="accordion">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-target="#examples">Examples</a>
+    </div>
+    <div id="examples" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <p>This page's information will be used in the following examples.</p>
+        <p>
+          To include the <em>title</em> attribute in an anchor tag only if you have enabled the corresponding option;
+        </p>
+{% highlight html %}
+<a href="{{ '{{url' }}}}"{#linksTitle} title="{{ '{{title' }}}}"{/linksTitle}>This is a test!</a>
+{% endhighlight %}
+        <p>This would output the following if you've enabled the option;</p>
+{% highlight html %}
+<a href="https://template-extension.org/guide/options/" title="Options | Guide | Template">This is a test!</a>
+{% endhighlight %}
+        <p>However, if you have disabled the option it will output this;</p>
+{% highlight html %}
+<a href="https://template-extension.org/guide/options/">This is a test!</a>
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>

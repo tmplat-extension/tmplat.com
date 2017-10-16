@@ -1,0 +1,44 @@
+
+gems:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - CNAME
+  - Gemfile
+  - README.md
+permalink: /post/:year/:month/:day/:title
+paginate: 8
+repository: template-extension/template-extension.org
+title: Template
+description: The homepage for the Template browser extension
+url:  https://template-extension.org
+author: neocotic
+twitter:
+  username: TemplateAddon
+social:
+  name: Template
+  links:
+    - https://twitter.com/TemplateAddon
+    - https://github.com/template-extension
+lang: en
+email: contact@template-extension.org
+analytics_account: UA-40890665-1
+sharethis_account: eac9710e-d5ca-4141-923a-23f4dcc402eb
+paypal_account: BGWG9R5LBNECY
+support_url: https://template.uservoice.com
+translate_url: http://i18n.tmpl.at
+extension:
+  chrome:
+    id: dcjnfaoifoefmnbhhlbppaebgnccfddf
+    repo: template-chrome
+  dates:
+    created: 2011-03-29
+    published: 2011-04-11
+    updated: 2015-11-08
+  file:
+    format: application/zip
+    size: 178.9KB
+  version: "1.2.9"

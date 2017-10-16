@@ -1,0 +1,1323 @@
+---
+layout: page
+title: Changes
+header: Changes
+header_addon: Complete log of all changes
+description: Read through the change logs for all of the Template extension updates
+keywords: template, browser, extension, changes, changelog, updates, releases
+---
+{% capture chrome_repo %}https://github.com/template-extension/{{site.extension.chrome.repo}}{% endcapture %}
+<div class="row-fluid">
+  <div class="span12">
+    <p>These changes have been made to Template in the versions listed.</p>
+  </div>
+</div>
+
+<div class="row-fluid change-log">
+  <div class="span12">
+    <h2 id="1.2.9">1.2.9 <small>2015.11.08</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/222">#222</a>: Fix bug where <span class="label">dateTime</span> standard
+        variable failed to render correctly
+      </li>
+    </ul>
+
+    <h2 id="1.2.8">1.2.8 <small>2014.05.11</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/217">#217</a>: Update <a href="http://bit.ly">bit.ly</a> configuration due to
+        recent security breach
+      </li>
+    </ul>
+
+    <h2 id="1.2.7">1.2.7 <small>2014.02.26</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/201">#201</a>: Restyle keyboard shortcuts in popup and options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/204">#204</a>: Use rich desktop notifications
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/206">#206</a>: Update a <a href="http://yourls.org">YOURLS</a> Wiki link
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/208">#208</a>: Fix overlapping UI bug in popup
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/209">#209</a>: Fix bug preventing OAuth flow completing
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update build dependencies
+      </li>
+    </ul>
+
+    <h2 id="1.2.6">1.2.6 <small>2013.05.20</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/170">#170</a>: Add tooltips to explain button states
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/193">#193</a>: Add new <span class="label">wordCount</span> operation to count
+        the words in a string
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/198">#198</a>: Add new <span class="label">meta</span> operation to access
+        specific meta information
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/199">#199</a>: Add new <span class="label">html</span> standard variable to
+        enable access to the entire pages HTML
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/199">#199</a>: Add new <span class="label">markdown</span> standard variable
+        to enable access to the entire contents of a page as Markdown
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/199">#199</a>: Add new <span class="label">text</span> standard variable to
+        enable access to the entire pages text
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes and tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.2.5">1.2.5 <small>2013.05.14</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/181">#181</a>: Add new operations for evaluating <a href="http://en.wikipedia.org/wiki/XPath">XPath</a>
+        expressions
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/183">#183</a>: Add new objects for accessing <a href="http://dev.w3.org/html5/webstorage/">Web Storage</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/184">#184</a>: Update <a href="http://neocotic.com/html.md">html.md</a> to
+        v2.1.1
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/184">#184</a>: Add options for configuring HTML to Markdown conversion
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/187">#187</a>: Make the Anchor Tags options more generic
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/187">#187</a>: Deprecate the <span class="label">anchorTarget</span> option
+        and replace with the <span class="label">linksTarget</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/187">#187</a>: Deprecate the <span class="label">anchorTitle</span> option and
+        replace with the <span class="label">linksTitle</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/189">#189</a>: Update the extension homepage to <a href="http://template-extension.org">http://template-extension.org</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes and UI tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.2.4">1.2.4 <small>2013.05.07</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/179">#179</a>: Fix critical bug for Linux systems
+      </li>
+    </ul>
+
+    <h2 id="1.2.3">1.2.3 <small>2013.05.06</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/176">#176</a>: Fix bug preventing options from being saved correctly
+      </li>
+    </ul>
+
+    <h2 id="1.2.2">1.2.2 <small>2013.05.04</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/168">#168</a>: Fix bug on OS X causing Windows keyboard shortcut modifiers to
+        be displayed
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/169">#169</a>: Update <a href="http://neocotic.com/html.md">html.md</a> to
+        v2.1.0
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/171">#171</a>: Fix bug which caused sections to be case-sensitive
+      </li>
+    </ul>
+
+    <h2 id="1.2.1">1.2.1 <small>2013.04.29</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/109">#109</a>: Upgrade feedback widget from <a href="https://www.uservoice.com">UserVoice</a>
+        to newer version to avoid CSP workaround
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/119">#119</a>: Update <a href="https://github.com/janl/mustache.js">mustache.js</a>
+        to v0.7.2
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/133">#133</a>: Update <a href="http://jquery.com">jQuery</a> to v1.9.1
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/133">#133</a>: Update <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+        to v2.3.1
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/136">#136</a>: Add <a href="http://underscorejs.org">Underscore.js</a> v1.4.4
+        to allow for cleaner code and remove duplication
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/137">#137</a>: Add <a href="https://github.com/caolan/async">Async</a> v0.2.7
+        to greatly simplify asynchronous code
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/141">#141</a>: Change CSP to prevent errors caused by the <a href="https://www.uservoice.com">UserVoice</a>
+        feedback widget
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/143">#143</a>: Dialog windows to provide initial focus to first field when
+        opened
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/144">#144</a>: Make trace logs cleaner
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/145">#145</a>: Fix bug where whitespace in templates was being ignored
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/146">#146</a>: Support bulk enable &amp; disable operations
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/153">#153</a>: Fix &quot;Save As...&quot; functionality in export process
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/155">#155</a>: Add new <span class="label">escape</span> operation to escape
+        strings for insertion into HTML
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/155">#155</a>: Add new <span class="label">unescape</span> operation to
+        perform the opposite action of <span class="label">escape</span>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/162">#162</a>: Add new <span class="label">locale</span> standard variable to
+        enable access to the detected <a href="http://en.wikipedia.org/wiki/ISO_639_macrolanguage">ISO 639</a> language
+        code
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/166">#166</a>: Simplify how template icons are managed internally
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Massive re-write of a lot of code to make it simpler and more optimized
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Huge number of bug fixes and UI tweaks
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Some nice new undocumented features
+      </li>
+    </ul>
+
+    <h2 id="1.2.0">1.2.0 <small>2013.01.15</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/110">#110</a>: Replace calls to deprecated chrome API methods
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/111">#111</a>: Update <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+        to v2.2.2
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/115">#115</a>: Add new operations for query selectors
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/116">#116</a>: Redesign Templates tab on Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/117">#117</a>: Improve build process and restructure code to simplify support
+        for other browsers
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/120">#120</a>: Update <a href="http://jquery.com">jQuery</a> to v1.8.3
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/120">#120</a>: Update <a href="https://github.com/allmarkedup/jQuery-URL-Parser">jQuery URL Parser</a>
+        to v2.2.1
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/120">#120</a>: Update <a href="http://neocotic.com/html.md">html.md</a> to
+        v2.0.1
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/130">#130</a>: Add new configuration file to simplify future changes
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Plenty of bug fixes and UI tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.1.4">1.1.4 <small>2012.05.31</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/108">#108</a>: Improve inline installation compatibility
+      </li>
+    </ul>
+
+    <h2 id="1.1.3">1.1.3 <small>2012.05.30</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Relocate new donation button and add tooltip
+      </li>
+    </ul>
+
+    <h2 id="1.1.2">1.1.2 <small>2012.05.29</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/107">#107</a>: Add donation button to footer of Options page
+      </li>
+    </ul>
+
+    <h2 id="1.1.1">1.1.1 <small>2012.05.25</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/106">#106</a>: No longer remove <code>btn-primary</code> class from inline
+        installation buttons on homepage
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor <abbr title="Internationalization">i18n</abbr> tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.1.0">1.1.0 <small>2012.05.25</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/98">#98</a>: Add option to automatically paste Template output into the input
+        field focused when using a keyboard shortcut (available in templates via the new
+        <span class="label">shortcutsPaste</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/98">#98</a>: Change keyboard shortcut detection to <code>keydown</code> from
+        <code>keyup</code>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/102">#102</a>: Update <a href="http://code.google.com/chrome/extensions/manifestVersion.html">manifest version</a>
+        to 2
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/102">#102</a>: Provide and support a <a href="http://code.google.com/chrome/extensions/contentSecurityPolicy.html">Content Security Policy</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/103">#103</a>: Move all CSS and inline styles into individual external files
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/104">#104</a>: Update <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+        to v2.0.3
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/104">#104</a>: Many minor UI fixes and tweaks
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/105">#105</a>: Redesign popup to be more consistent with look and feel of the
+        Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/105">#105</a>: Replace all template icons with the <a href="http://glyphicons.com">Glyphicons</a>
+        set included in <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/105">#105</a>: Remove toolbar button text/icon editing functionality and make
+        the <span class="label">toolbarStyle</span> option obsolete
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor fixes and tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.0.10">1.0.10 <small>2012.05.14</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/101">#101</a>: Fix bug where <span class="label">capitalise</span> operation
+        wasn't working
+      </li>
+    </ul>
+
+    <h2 id="1.0.9">1.0.9 <small>2012.05.09</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/97">#97</a>: Update build process to minify <abbr title="Internationalization">i18n</abbr>
+        files for distribution
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/99">#99</a>: Add new operations for string manipulation
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update <a href="http://neocotic.com/date-ext">date-ext</a> to v1.0.2
+      </li>
+    </ul>
+
+    <h2 id="1.0.8">1.0.8 <small>2012.04.20</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/92">#92</a>: Improve error handling when saving export data to a file
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/94">#94</a>: Add new <span class="label">linkHTML</span> standard variable to
+        enable access to the HTML behind the right-clicked link
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/94">#94</a>: Add new <span class="label">linkMarkdown</span> standard variable
+        to enable access to contents of the right-clicked link as Markdown
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/94">#94</a>: Add new <span class="label">linkText</span> standard variable to
+        enable access to the text of the right-clicked link
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/95">#95</a>: Add option to automatically paste Template output into
+        right-clicked input field (available in templates via the new <span class="label">menuPaste</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update <a href="http://jquery.com">jQuery</a> to v1.7.2
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update <a href="https://github.com/janl/mustache.js">mustache.js</a> to v0.4.2</li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor fixes
+      </li>
+    </ul>
+
+    <h2 id="1.0.7">1.0.7 <small>2012.03.16</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/90">#90</a>: Fix bug where wrong window is used to populate template data in
+        <a href="http://www.chromium.org/getting-involved/dev-channel">Chrome dev</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/91">#91</a>: Add new <span class="label">tabs</span> list to enable iteration
+        over the URLs of every tab in the current window
+      </li>
+    </ul>
+
+    <h2 id="1.0.6">1.0.6 <small>2012.03.15</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/87">#87</a>: Fix bug where URL and all derived variables are automatically
+        decoded
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/88">#88</a>: Add new <em>Selection in Markdown</em> predefined template
+        (disabled by default)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/89">#89</a>: Fix bug where whitespace after an operation is being ignored
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor UI fixes
+      </li>
+    </ul>
+
+    <h2 id="1.0.5">1.0.5 <small>2012.03.12</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/82">#82</a>: Add new <span class="label">selectionMarkdown</span> standard
+        variable to enable access to the current selection formatted as Markdown
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/83">#83</a>: Improve way in which web service configurations are stored and
+        retrieved
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/85">#85</a>: Improve help documentation for certain fields in the Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/86">#86</a>: Add user feedback system to the Options page
+      </li>
+    </ul>
+
+    <h2 id="1.0.4">1.0.4 <small>2012.03.07</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/80">#80</a>: Tidy <abbr title="Internationalization">i18n</abbr> bundle to
+        help with <a href="http://i18n.tmpl.at">new translation process</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/81">#81</a>: Fix bug where unregistered keyboard shortcuts still trigger
+        desktop notification when using modifier
+      </li>
+    </ul>
+
+    <h2 id="1.0.3">1.0.3 <small>2012.03.06</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/76">#76</a>: Add new <span class="label">selectionHTML</span> standard
+        variable to enable access to the HTML behind the current selection
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/76">#76</a>: Add new <span class="label">selectedImages</span> list to enable
+        iteration over images within in current selection
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/76">#76</a>: Add new <span class="label">images</span> list to enable
+        iteration over all of the images on the page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/77">#77</a>: Fix bug preventing access to page-derived template variables
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/78">#78</a>: Remove duplicate URLs from certain lists
+      </li>
+    </ul>
+
+    <h2 id="1.0.1">1.0.1 <small>2012.03.05</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/71">#71</a>: Make <a href="http://bit.ly">bit.ly</a> the default URL shortener
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/71">#71</a>: Make unauthenticated <a href="http://bit.ly">bit.ly</a> use the
+        <a href="http://tmpl.at">tmpl.at</a> custom domain
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/72">#72</a>: Add <a href="http://oauth.net">OAuth</a> support for <a href="http://bit.ly">bit.ly</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/72">#72</a>: Add new <span class="label">bitlyAccount</span> option to
+        determine whether or not you are logged in to <a href="http://bit.ly">bit.ly</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/72">#72</a>: Remove the <span class="label">bitlyApiKey</span> and
+        <span class="label">bitlyUsername</span> options
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/73">#73</a>: Add new <span class="label">yourlsAuthentication</span> option to
+        determine how the <a href="http://yourls.org">YOURLS</a> URL shortener is being authenticated
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/73">#73</a>: Improve UI on Options page in some places
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/74">#74</a>: Implement support for <a href="http://oauth.net/2">OAuth 2.0</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/75">#75</a>: Improve extension compatibility system
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes and UI tweaks
+      </li>
+    </ul>
+
+    <h2 id="1.0.0">1.0.0 <small>2012.02.17</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>Full release!</strong>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/20">#20</a>: Add <em>Login</em>/<em>Logout</em> button to <a href="http://goo.gl">goo.gl</a>'s
+        configuration on the Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/20">#20</a>: Deprecate the <span class="label">googlOAuth</span> option and
+        replace with the new <span class="label">googlAccount</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/35">#35</a>: Ensure code and documentation quality and standards are high
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/47">#47</a>: Completely redesign and simplify the Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Add option to keep popup open after clicking a template
+        (available in templates via the new <span class="label">toolbarClose</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Deprecate the <span class="label">toolbarFeature</span> option
+        (still available by inverting the <span class="label">toolbarPopup</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Deprecate the <span class="label">toolbarFeatureDetails</span>
+        option and replace with the <span class="label">toolbarStyle</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Deprecate the <span class="label">toolbarFeatureName</span>
+        option and replace with the <span class="label">toolbarKey</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/49">#49</a>: Add new <span class="label">count</span> standard variable to
+        enable access to the total number of templates
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/49">#49</a>: Add new <span class="label">customCount</span> standard variable
+        to enable access to the total number of custom templates (i.e. excluding predefined)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/49">#49</a>: Add new <span class="label">popular</span> object to enable
+        access to the details of the most popular template
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/49">#49</a>: Reorganize template data stored in
+        <code>localStorage</code>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/52">#52</a>: Completely rewrite code in <a href="http://coffeescript.org">CoffeeScript</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/52">#52</a>: Update build process
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/58">#58</a>: Remove requirement of names for templates
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/59">#59</a>: Reorganize option data stored in <code>localStorage</code>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/60">#60</a>: Automically save changes on the Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/61">#61</a>: Add new <span class="label">coords</span> object to enable access
+        to the user's geolocation
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/62">#62</a>: Add Options link to bottom of context menu (available in
+        templates via the new <span class="label">menuOptions</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/62">#62</a>: Add Options link to bottom of popup (available in templates via
+        the new <span class="label">toolbarOptions</span> option)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/62">#62</a>: Deprecate the <span class="label">contextMenu</span> option and
+        replace with the new <span class="label">menu</span> option
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">author</span> standard variable to
+        enable access to the author from the page's meta information
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">characterSet</span> standard variable
+        to enable access to the <a href="http://www.iana.org/assignments/character-sets">character set</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">description</span> standard variable
+        to enable access to the description from the page's meta information
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">depth</span> standard variable to
+        enable access to the colour depth of the user's screen
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">keywords</span> list to enable
+        iteration over the keywords from the page's meta information
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">lastModified</span> standard variable
+        and operation to enable access to the potentially formatted last modified date &amp; time
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">links</span> list to enable iteration
+        over all of the links on the page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">pageWidth</span> and
+        <span class="label">pageHeight</span> standard variables to enable access to the page's dimensions
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">plugins</span> list to enable
+        iteration over the active browser plugins
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">referrer</span> standard variable to
+        enable access to the URL of the referring page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">screenWidth</span> and
+        <span class="label">screenHeight</span> standard variables to enable access to the user's screen resolution
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">scripts</span> list to enable
+        iteration over all of the page's external script sources
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">styleSheets</span> list to enable
+        iteration over all of the page's external CSS sources
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Add new <span class="label">template</span> object to enable
+        access to the activated template
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/63">#63</a>: Deprecate the <span class="label">selectionLinks</span> list and
+        replace with the new <span class="label">selectedLinks</span> list
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/64">#64</a>: Deprecate the <span class="label">short</span> standard variable
+        and replace with the new <span class="label">shorten</span> operation
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/65">#65</a>: Allow easier access to object properties using dot notation
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/66">#66</a>: Fix bug where some variables are not case-insensitive
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/67">#67</a>: Fix bug where overwriting an existing file during the export
+        process can corrupt the file
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/68">#68</a>: Simplify debugging and testing by adding a new Developer Tools
+        section to the Options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/69">#69</a>: Redesign desktop notifications
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/70">#70</a>: Redesign <em>Please wait...</em> animation in popup
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        More bug fixes and tweaks
+      </li>
+    </ul>
+
+    <h2 id="0.3.0.0">0.3.0.0 <small>2011.12.22</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Add option to change behaviour of the toolbar icon (available in
+        templates via the new <span class="label">toolbarPopup</span> and <span class="label">toolbarFeature</span>
+        option tags)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Add option to select a default template (available in templates
+        via the new <span class="label">toolbarFeatureName</span> option tag)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/48">#48</a>: Add option to change the style of the toolbar icon to that of the
+        default template <span class="label">toolbarFeatureDetails</span> option tag)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/50">#50</a>: Make tags case-insensitive
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/51">#51</a>: Add new <span class="label">dateTime</span> simple tag and
+        function to allow formatted date/time
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/53">#53</a>: Add support for <a href="http://code.google.com/chrome/webstore/docs/inline_installation.html">inline installation</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/54">#54</a>: Replace API calls deprecated by <a href="http://code.google.com/chrome/extensions/whats_new.html#16">Chrome 16</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/56">#56</a>: Add new <span class="label">decode</span> function to decode its
+        previously encoded contents
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Change to <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update homepage links
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Patch underlying template technology
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes
+      </li>
+    </ul>
+
+    <h2 id="0.2.4.0">0.2.4.0 <small>2011.10.20</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/38">#38</a>: Add help documentation for general settings on options page
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/40">#40</a>: Make template export process no longer require external resource
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/44">#44</a>: Many minor UI changes in options page
+      </li>
+    </ul>
+
+    <h2 id="0.2.3.1">0.2.3.1 <small>2011.10.10</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/41">#41</a>: Rebrand logo, again...
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/42">#42</a>: Prevent content script conflicts between version updates
+      </li>
+    </ul>
+
+    <h2 id="0.2.3.0">0.2.3.0 <small>2011.10.07</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Rebrand logo and create new promotional images
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/36">#36</a>: Improve URL derivation when using the context menu
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update <a href="http://jquery.com">jQuery</a> to v1.6.4
+      </li>
+    </ul>
+
+    <h2 id="0.2.2.0">0.2.2.0 <small>2011.08.08</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/33">#33</a>: Ignore keyboard shortcuts for disabled templates for validation
+        and lookup
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor spelling correction
+      </li>
+    </ul>
+
+    <h2 id="0.2.1.1">0.2.1.1 <small>2011.08.05</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/34">#34</a>: Fix bug where notification is displayed when user clicks
+        <em>Copy</em> button when exporting templates
+      </li>
+    </ul>
+
+    <h2 id="0.2.1.0">0.2.1.0 <small>2011.08.05</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add new predefined Markdown template (disabled by default)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/29">#29</a>: Add new <span class="label">selectionLinks</span> complex tag to
+        allow iteration over links within in current selection
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/29">#29</a>: Change <span class="label">selection</span> simple tag to allow
+        access using popup/shortcuts and not just right-click menu
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/26">#26</a>: Fix minor UI defects in popup
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes
+      </li>
+    </ul>
+
+    <h2 id="0.2.0.1">0.2.0.1 <small>2011.08.04</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/27">#27</a>: Add new permissions required by <a href="http://code.google.com/chrome/extensions/whats_new.html#13">Chrome 13</a>
+        to use copy/paste functionality
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/28">#28</a>: Add copy and paste buttons to the template import and export
+        views
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes and tweaks
+      </li>
+    </ul>
+
+    <h2 id="0.2.0.0">0.2.0.0 <small>2011.08.03</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/14">#14</a>: Change extension name to <em>Template</em> to do it justice
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/11">#11</a>: Add import/export functionality for templates
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/17">#17</a>: Add many more images to be used with your custom templates
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/10">#10</a>: Clean up options page further using tabs
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/23">#23</a>: Remove supported extensions section on the options page
+        <ul>
+          <li>Includes removal of <em>management</em> permission</li>
+        </ul>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minor bug fixes and tweaks
+      </li>
+    </ul>
+
+    <h2 id="0.1.1.1">0.1.1.1 <small>2011.07.28</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/21">#21</a>: Fix error caused by using extension on a page where <a href="https://chrome.google.com/webstore/detail/hehijbfgiekmjfkfjpbkbammjbdenadd">IE Tab</a>
+        is active
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/21">#21</a>: Redesign compatibility structure to support multiple extensions
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/21">#21</a>: Add compatibility support for <a href="https://chrome.google.com/webstore/detail/miedgcmlgpmdagojnnbemlkgidepfjfi">IE Tab Classic</a>,
+        <a href="https://chrome.google.com/webstore/detail/fnfnbeppfinmnjnjhedifcfllpcfgeea">IE Tab Multi (Enhance)</a>
+        and <a href="https://chrome.google.com/webstore/detail/icoloanbecehinobmflpeglknkplbfbm">Mozilla Gecko Tab</a>
+        extensions
+      </li>
+    </ul>
+
+    <h2 id="0.1.1.0">0.1.1.0 <small>2011.07.27</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/16">#16</a>: Rename the <span class="label">cookies</span> template simple tag
+        to <span class="label">cookiesEnabled</span>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/16">#16</a>: Add new <span class="label">cookies</span> template complex tag
+        to allow iteration over cookie names
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/16">#16</a>: Add new <span class="label">cookie</span> template function tag
+        to allow access to cookie values
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/13">#13</a>: Add new <span class="label">selection</span> template simple tag
+        to allow access to the currently selected text on the page (only available when accessed via the context menu)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/18">#18</a>: Update the notification messages to be more generic
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/15">#15</a>: Add option to disable the context (right-click) menu (available
+        in templates via the new <span class="label">contextMenu</span> option tag)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Slightly rearrange the options page
+      </li>
+    </ul>
+
+    <h2 id="0.1.0.3">0.1.0.3 <small>2011.07.26</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Rename <em>Features</em> to <em>Templates</em> for simplicity
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add more options (browser, OS and extension information)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Remove <em>Update</em> button from options page
+        <ul>
+          <li>Automatically updates where appropriate from now on</li>
+          <li>You must still press <em>Save &amp; Close</em> to persist your changes</li>
+        </ul>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Simplify the process of adding new features (i.e. templates)
+      </li>
+    </ul>
+    <p>Thanks to <a href="https://github.com/normalex">normalex</a> for identifying most of these issues.</p>
+    <h2 id="0.1.0.2">0.1.0.2 <small>2011.07.21</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Fix error generated by <span class="label">param</span>, <span class="label">segment</span>,
+        <span class="label">fparam</span> and <span class="label">fsegment</span> template functions
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/2">#2</a>: Fix bug where valid keyboard shortcut inputs were being rejected
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Deprecate the <span class="label">originalSource</span> template simple tag and replace with the
+        <span class="label">originalUrl</span> simple tag
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Deprecate the <span class="label">source</span> template simple tag and replace with the
+        <span class="label">url</span> simple tag
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Deprecate the <span class="label">encoded</span> template simple tag and replace with <thead>
+        </thead><span class="label">encode</span> function which encodes its rendered contents
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Make some minor UI tweaks for options page
+      </li>
+    </ul>
+    <p>Thanks to <a href="https://github.com/bmatzelle">bmatzelle</a> for identifying most of these issues.</p>
+    <h2 id="0.1.0.1">0.1.0.1 <small>2011.07.20</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/8">#8</a>: Fix problem where URL shortener options were being forgotten when
+        browser was closed
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/8">#8</a>: Add some feedback messages if/when any errors occur when copying a
+        shortened URL (i.e. could not reach URL shortener service)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/2">#2</a>: Attempt to make keyboard shortcuts work more consistently
+      </li>
+    </ul>
+
+    <h2 id="0.1.0.0">0.1.0.0 <small>2011.07.19</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/4">#4</a>: Add feature customization including a template system
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/4">#4</a>: Convert default features to use the new template system
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/4">#4</a>: Completely rewrite code to dynamically copy parsed templates
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/4">#4</a>: Redesign Features section of options page to support feature
+        customization
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/4">#4</a>: Add new help system to options page including documentation on the
+        new template system
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/7">#7</a>: Add support for context (right-click) menus
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/6">#6</a>: Add support for <a href="http://yourls.org">YOURLS</a> URL
+        shortener installations
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/1">#1</a>: Fix <a href="http://bit.ly">bit.ly</a> URL shortener service
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/5">#5</a>: Allow keyboard shortcuts to be customized
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <a href="{{ chrome_repo }}/issues/3">#3</a>: Fix OS X keyboard shortcuts
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Major rewrite of code including huge optimization work and performance improvements
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Update <a href="http://jquery.com">jQuery</a> to v1.6.2
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Remove <a href="http://jquery.com">jQuery</a> dependencies from all but the background and options pages to
+        optimize page loads
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Remove support for the French language (until accurate translation is available)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Change how supported extensions are used to be less intrusive
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        And lots more...
+      </li>
+    </ul>
+
+    <h2 id="0.0.2.1">0.0.2.1 <small>2011.04.11</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add support for multiple URL shortener services
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add <a href="http://oauth.net">OAuth</a> support for URL shortener services (enabled by default)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add support for <a href="http://bit.ly">bit.ly</a> URL shortener service
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add new window (target) option for anchor feature
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Change software-specific features (e.g. BBCode) to be disabled by default
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Change key listeners to listen for <code>keyup</code> events as opposed to <code>keydown</code>
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add collapsible sections to options page to simplify content
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Complete rewrite of code and file system restructuring for optimization and ease of future improvements/changes
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Include <a href="http://jquery.com">jQuery</a> (v1.5.2 - minified) to minimize code duplication and increase
+        efficiency
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Reduce image sizes for optimization
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Minify JavaScript files for optimization
+      </li>
+    </ul>
+
+    <h2 id="0.0.2.0">0.0.2.0 <small>2011.03.29</small></h2>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add BBCode feature
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add Encoded feature
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Implement <a href="https://chrome.google.com/webstore/detail/hehijbfgiekmjfkfjpbkbammjbdenadd">IE Tab</a>
+        extension compatibility (options are included but not visible yet)
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add enable/disable feature option functionality
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add reorder feature option functionality
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Add French language support
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        Change images to be more consistent
+      </li>
+    </ul>
+  </div>
+</div>

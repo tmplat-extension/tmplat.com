@@ -1,0 +1,22 @@
+{% if layout.sidebar_items %}
+  <div class="well sidebar-nav">
+    <ul class="nav nav-list">
+    {% for item in layout.sidebar_items %}
+      {% if item.divider %}
+        <li class="divider"></li>
+      {% else %}
+        <li class="{% if item.items %}nav-header{% endif %}{% if item.href == page.sidebar_url or item.active %} active{% endif %}">{% if item.href != null %}<a href="{{ item.href }}">{% endif %}{% if item.icon %}<i class="icon-{{ item.icon }}"></i> {% endif %}{{ item.text | escape }}{% if item.href != null %}</a>{% endif %}</li>
+        {% if item.items %}
+          {% for sub_item in item.items %}
+            {% if sub_item.divider %}
+              <li class="divider"></li>
+            {% else %}
+              <li{% if sub_item.href == page.sidebar_url or sub_item.active %} class="active"{% endif %}>{% if sub_item.href != null %}<a href="{{ sub_item.href }}">{% endif %}{% if sub_item.icon %}<i class="icon-{{sub_item.icon}}"></i> {% endif %}{{ sub_item.text | escape }}{% if sub_item.href != null %}</a>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}

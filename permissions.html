@@ -1,0 +1,88 @@
+---
+layout: page
+title: Permissions
+header: Permissions
+header_addon: Breakdown of required browser permissions
+description: Get a better understanding of the permissions required by the Template extension
+keywords: template, browser, extension, permissions
+---
+<div class="row-fluid">
+  <div class="span12">
+    <p>
+      Some browsers need you to grant extensions and apps special permissions when installed to help you keep control.
+      The permissions mentioned on this page are all required by Template in order to provide complete functionality.
+    </p>
+    <p>
+      Some of these permissions can appear to be quite scary so we have attempted to explain why each one is required.
+      If, for whatever reason, you doubt these explanations or are simply curious, please feel free to take a look at
+      the <a href="https://github.com/template-extension">source code</a> yourself. It is open source after all.
+    </p>
+
+    <h2 id="visible">Visible</h2>
+    <p>
+      These permissions should be displayed in a <em>warning</em> message when you first install Template and you will
+      be asked to accept them:
+    </p>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;Data you copy and paste&quot;</strong> &raquo; Although this is a no-brainer for most of you, some
+        long-term users may wonder why this wasn't always displayed. Well, that's because this permission didn't even
+        exist until <a href="http://code.google.com/chrome/extensions/whats_new.html#13">Chrome 13</a>, where it was
+        introduced.
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;Your browsing history&quot;</strong> &raquo; This is required in order to execute the keyboard
+        shortcut and <abbr title="Document Object Model">DOM</abbr> parser script on all previously opened pages which
+        is required when installing/updating/re-enabling the extension to ensure consistency.
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;Your physical location&quot;</strong> &raquo; This is required for the <a href="/guide/lists-objects/#coords">coords</a>
+        object variable.
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;Your data on all websites&quot;</strong> &raquo; This is caused by the need to read the URL and
+        page title as well as injecting the keyboard shortcut and <abbr title="Document Object Model">DOM</abbr> parser
+        script in to all possible pages.
+      </li>
+    </ul>
+    <p>Further information on these permissions can be found in their corresponding developer websites:</p>
+    <ul>
+      <li>
+        <a href="http://code.google.com/chrome/extensions/permission_warnings.html#warnings">Google Chrome</a>
+        (<a href="http://www.google.com/support/chrome_webstore/bin/answer.py?hl=en&amp;answer=186213">more</a>)
+      </li>
+    </ul>
+
+    <h2 id="hidden">Hidden</h2>
+    <p>You won't be warned about these permissions but Template does request them from the browser:</p>
+    <ul>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;contextMenus&quot;</strong> &raquo; This is required to support the right-click menus.
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;cookies&quot;</strong> &raquo; This is required to make cookie information accessible to
+        templates.
+      </li>
+      <li>
+        <span class="label label-warning">chrome</span>
+        <strong>&quot;notifications&quot;</strong> &raquo; This is required to display notifications to the user (if the
+        associated option is enabled).
+      </li>
+    </ul>
+    <p>
+      Once again, further information on these <em>hidden</em> permissions can be found in their corresponding developer
+      websites:
+    </p>
+    <ul>
+      <li>
+        <a href="http://code.google.com/chrome/extensions/permission_warnings.html#nowarning">Google Chrome</a>
+      </li>
+    </ul>
+  </div>
+</div>

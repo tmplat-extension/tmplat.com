@@ -1,0 +1,215 @@
+---
+layout: page
+keywords: template, browser, extension, addon, homepage, install, open, source
+microdata: http://schema.org/WebApplication
+carousel:
+  - url: /assets/img/screenshots/en/01.png
+    title: Simplicity
+    property: screenshot
+    caption: Plenty of ways to quickly access your favourite templates while browsing
+  - url: /assets/img/screenshots/en/02.png
+    title: Make yourself at home
+    property: screenshot
+    caption: Have complete control of how Template works using its amazing options page
+  - url: /assets/img/screenshots/en/03.png
+    title: Roll your own
+    property: screenshot
+    caption: Customizing existing templates or creating your very own couldn't be any easier
+  - url: /assets/img/screenshots/en/04.png
+    title: Mini links
+    property: screenshot
+    caption: Choose from a list of available URL shorteners, all with their own configuration options
+  - url: /assets/img/screenshots/en/05.png
+    title: Know-how
+    property: screenshot
+    caption: Template comes complete with its own fully documented built-in guide so writing your own is as easy as pie
+---
+<div class="hide">
+  <link itemprop="applicationCategory SoftwareApplicationCategory" href="http://schema.org/OtherApplication">
+  {% if site.extension.dates.created %}
+    <meta itemprop="copyrightYear" content="{{ site.extension.dates.created | date:'%Y' }}">
+    <meta itemprop="dateCreated" content="{{ site.extension.dates.created }}">
+  {% endif %}
+  {% if site.extension.dates.published %}<meta itemprop="datePublished" content="{{ site.extension.dates.published }}">{% endif %}
+  {% if site.extension.dates.updated %}<meta itemprop="dateModified" content="{{ site.extension.dates.updated }}">{% endif %}
+  <meta itemprop="description headline" content="Quickly and easily copies info on the current page using a simple and unique template system.">
+  {% if site.extension.file %}
+    {% if site.extension.file.format %}<meta itemprop="fileFormat" content="{{ site.extension.file.format }}">{% endif %}
+    {% if site.extension.file.size %}<meta itemprop="fileSize" content="{{ site.extension.file.size }}">{% endif %}
+  {% endif %}
+  <meta itemprop="image" content="{{ '/template/images/logo_72.png' | absolute_url }}">
+  <meta itemprop="isFamilyFriendly" content="true">
+  {% if page.keywords %}<meta itemprop="keywords" content="{{ page.keywords }}">{% endif %}
+  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <link itemprop="availability" href="http://schema.org/InStock">
+    <meta itemprop="price" content="$0">
+    <meta itemprop="priceCurrency" content="USD">
+  </div>
+  <meta itemprop="permissions" content="Data you copy and paste">
+  <meta itemprop="permissions" content="Your browsing history">
+  <meta itemprop="permissions" content="Your physical location">
+  <meta itemprop="permissions" content="Your data on all websites">
+</div>
+
+<div class="jumbotron">
+  <h1>{{ site.title }}</h1>
+  <p class="lead">Ultimate productivity browser extension with near unlimited uses</p>
+
+  <a href="https://chrome.google.com/webstore/detail/{{ site.extension.chrome.id }}" class="btn btn-large btn-primary chrome_install_button" data-container="body" title="Chrome Web Store"><i class="icon-download-alt icon-white"></i> Install</a>
+  <a href="https://github.com/template-extension" class="btn btn-large btn-success" data-container="body" title="Get involved!"><i class="icon-eye-open icon-white"></i> View Source</a>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="donation">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="{{ site.paypal_account }}">
+    <button type="submit" class="btn btn-warning btn-large" data-container="body" title="Share the love!"><i class="icon-heart icon-white"></i> Donate</button>
+  </form>
+
+  {% include sharing.html %}
+</div>
+
+<hr>
+
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Templates</h2>
+    <p>
+      Using a powerful template system it allows users to easily create their own templates making the possibilities
+      endless and includes a comprehensive built-in guide to help you to write your own.
+    </p>
+    <p><a href="/guide/" class="btn">Guide <i class="icon-chevron-right"></i></a></p>
+  </div>
+
+  <div class="span4">
+    <h2>Ready-to-go</h2>
+    <p>Template comes packed with the following predefined templates:</p>
+    <ul>
+      <li><span class="clickable" data-title="URL" data-toggle="popover" data-content-selector="#popover-url">URL</span></li>
+      <li><span class="clickable" data-title="Short" data-toggle="popover" data-content-selector="#popover-short">Short</span></li>
+      <li><span class="clickable" data-title="Anchor" data-toggle="popover" data-content-selector="#popover-anchor">Anchor</span></li>
+      <li><span class="clickable" data-title="Encoded" data-toggle="popover" data-content-selector="#popover-encoded">Encoded</span></li>
+      <li><span class="clickable" data-title="Markdown" data-toggle="popover" data-content-selector="#popover-markdown">Markdown</span></li>
+      <li><span class="clickable" data-title="BBCode" data-toggle="popover" data-content-selector="#popover-bbcode">BBCode</span></li>
+      <li><span class="clickable" data-title="Selection in Markdown" data-toggle="popover" data-content-selector="#popover-selection-in-markdown">Selection in Markdown</span></li>
+    </ul>
+    <div id="popover-url" class="hide">Copies the URL of the current tab</div>
+    <div id="popover-short" class="hide">
+      Copies the shortened URL (using any of the supported services)
+    </div>
+    <div id="popover-anchor" class="hide">
+      Copies an HTML anchor tag (<code>&lt;a&gt;</code>) with the URL and the tab's title
+    </div>
+    <div id="popover-encoded" class="hide">
+      Copies the encoded URL (to be safely added directly in to an HTTP query)
+    </div>
+    <div id="popover-markdown" class="hide">
+      Copies a Markdown inline link with the URL and the tab's title
+    </div>
+    <div id="popover-bbcode" class="hide">
+      Copies a BBCode URL tag (<code>[url]</code>) with the URL and the tab's title
+    </div>
+    <div id="popover-selection-in-markdown" class="hide">
+      Copies the current selection on the page as Markdown
+    </div>
+  </div>
+
+  <div class="span4">
+    <h2>Powerful</h2>
+    <p>
+      With just the click of a button you can quickly and easily add all the information you want directly to your
+      system clipboard <em>without any formatting</em>, saving you lots of time with those tedious tasks.
+    </p>
+    <p>
+      Coupled with support for keyboard shortcuts and right-click menus makes accessing to your favourite templates even
+      easier and faster. The unique and simple options page empowers you with full control over how Template behaves and
+      management over your templates.
+    </p>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Shortening</h2>
+    <p>
+      URL shortening services have become common practise due to the popularity of micro-blogging, so Template comes
+      prepared with support for these popular services:
+    </p>
+    <ul>
+      <li><span class="clickable" data-title="bit.ly" data-toggle="popover" data-content-selector="#popover-bitly">bit.ly</span></li>
+      <li><span class="clickable" data-title="goo.gl" data-toggle="popover" data-content-selector="#popover-googl">goo.gl</span></li>
+      <li><span class="clickable" data-title="YOURLS" data-toggle="popover" data-content-selector="#popover-yourls">YOURLS</span></li>
+    </ul>
+    <div id="popover-bitly" class="hide">
+      Link to your <a href="http://bit.ly">bit.ly</a> account to allow tracking on your timeline
+    </div>
+    <div id="popover-googl" class="hide">
+      Login to your Google account to allow tracking on <a href="http://goo.gl">goo.gl</a>
+    </div>
+    <div id="popover-yourls" class="hide">
+      Link to any custom <a href="http://yourls.org">YOURLS</a> installations
+    </div>
+  </div>
+
+  <div class="span4">
+    <h2>Transparent</h2>
+    <p>
+      We know it can be daunting for some of you when you see those warnings when installing new extensions and apps, so
+      we put together a detailed breakdown of all the permissions Template requires (even those you aren't warned about)
+      and explained why.
+    </p>
+    <p><a href="/permissions/" class="btn">Permissions <i class="icon-chevron-right"></i></a></p>
+  </div>
+
+  <div class="span4">
+    <h2>Evolution</h2>
+    <p>
+      We're always updating Template, trying to make it the absolute best it can be. Version
+      <a href="/changes/#{{ site.extension.version }}" itemprop="softwareVersion version">{{ site.extension.version }}</a>
+      has come along way since the first release and we're hoping to take it even farther.
+    </p>
+    <p><a href="{{ '/changes' | absolute_url }}" class="btn" itemprop="releaseNotes">Changes <i class="icon-chevron-right"></i></a></p>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Need Help?</h2>
+    <p>
+      If you have <em>any problems</em> with this extension, or would like to give us your feedback, or want to request
+      something completely new, we always welcome feedback through our dedicated help desk.
+    </p>
+    <p>
+      If you get stuck creating your own templates you should read the guide within the options page which is also
+      <a href="/guide/">available online</a>.
+    </p>
+    <p><a href="{{ site.support_url }}" class="btn">Help Desk <i class="icon-chevron-right"></i></a></p>
+  </div>
+
+  <div class="span4">
+    <h2>Knowledge</h2>
+    <p>
+      If you want you get learn how Template works you can take a look at the <a href="/docs/">source code documentation</a>
+      for the latest version.
+    </p>
+    <p>
+      Still want to know more? Feel free to follow us on Twitter, <a href="https://twitter.com/TemplateAddon">@TemplateAddon</a>.
+      However, I recommend that everyone makes our frequently asked questions their starting point for all enquiries.
+    </p>
+    <p><a href="/faq/" class="btn">FAQ <i class="icon-chevron-right"></i></a></p>
+  </div>
+
+  <div class="span4">
+    <h2>Browsers</h2>
+    <p>
+      Currently, Template is only supported on <a href="https://google.com/chrome">Chrome</a> but is planned to be
+      rolled out to <strong>all</strong> modern browsers after the next big release (as we've got a lot planned).
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row-fluid">
+  <div class="span12">
+    <h2 id="screenshots">Screenshots</h2>
+    {% include carousel.html %}
+  </div>
+</div>
