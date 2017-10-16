@@ -50,7 +50,7 @@ form.donation {
   font-size: 21px;
   padding: 14px 24px;
 }
-.jumbotron .st_container {
+.jumbotron .sharethis-inline-share-buttons {
   margin-top: 40px;
 }
 
@@ -63,10 +63,6 @@ form.donation {
 
 .sidebar-nav {
   padding: 9px 0;
-}
-
-.st_container .container {
-  display: none !important;
 }
 
 hr.nav-split {
@@ -93,12 +89,6 @@ hr.nav-split {
   }
   .jumbotron p {
     font-size: 24px;
-  }
-}
-
-@media (max-width: 609px) {
-  .st_container {
-    display: none;
   }
 }
 

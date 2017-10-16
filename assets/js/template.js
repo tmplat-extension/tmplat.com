@@ -45,16 +45,4 @@ $(function () {
     }
   });
 
-  // Add sharing buttons and then load script if sharing is enabled.
-  if ($('.st_container').length) {
-    $.getScript('https://ws.sharethis.com/button/buttons.js', function() {
-      window.stLight.options({
-        embeds: true,
-        onhover: false,
-        publisher: '{{ site.sharethis_account }}',
-        tracking: 'google'
-      });
-    });
-  }
-
 });
