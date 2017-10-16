@@ -1,11 +1,17 @@
+---
+---
 body {
   padding-top: 20px;
   padding-bottom: 60px;
 }
-a, .clickable {
+
+a,
+.clickable {
   cursor: pointer;
 }
-abbr, .help {
+
+abbr,
+.help {
   cursor: help;
 }
 
@@ -28,37 +34,42 @@ form.donation {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-}
-.container > hr {
-  margin: 60px 0;
+
+  > hr {
+    margin: 60px 0;
+  }
 }
 
 .jumbotron {
   margin: 80px 0;
   text-align: center;
-}
-.jumbotron h1 {
-  font-size: 120px;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-.jumbotron p {
-  font-size: 40px;
-  line-height: 1.25;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-.jumbotron .sharethis-inline-share-buttons {
-  margin-top: 40px;
+
+  h1 {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  p {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+  .sharethis-inline-share-buttons {
+    margin-top: 40px;
+  }
 }
 
-.masthead .nav li i {
-  display: none;
-}
-.masthead .nav li.active i {
-  display: inline-block;
+.masthead .nav li {
+  i {
+    display: none;
+  }
+
+  &.active i {
+    display: inline-block;
+  }
 }
 
 .sidebar-nav {
@@ -84,11 +95,13 @@ hr.nav-split {
 }
 
 @media (max-width: 767px) {
-  .jumbotron h1 {
-    font-size: 90px;
-  }
-  .jumbotron p {
-    font-size: 24px;
+  .jumbotron {
+    h1 {
+      font-size: 90px;
+    }
+    p {
+      font-size: 24px;
+    }
   }
 }
 
@@ -99,19 +112,23 @@ hr.nav-split {
 }
 
 @media (max-width: 480px) {
-  .jumbotron h1 {
-    font-size: 45px;
-  }
-  .jumbotron p {
-    font-size: 18px;
+  .jumbotron {
+    h1 {
+      font-size: 45px;
+    }
+    p {
+      font-size: 18px;
+    }
   }
 
-  .masthead h1,
-  .masthead h2,
-  .masthead h3 {
-    line-height: 10px;
-  }
-  .masthead .nav-pills {
-    float: none;
+  .masthead {
+    h1,
+    h2,
+    h3 {
+      line-height: 10px;
+    }
+    .nav-pills {
+      float: none;
+    }
   }
 }
