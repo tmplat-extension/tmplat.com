@@ -61,7 +61,7 @@
           <li><a href="/"{% if page.url == '/' %} class="active"{% endif %}><i class="icon-home"></i> Home</a></li>
           <li><a href="/guide/"{% if url_segments.first == 'guide' %} class="active"{% endif %}><i class="icon-info-sign"></i> Guide</a></li>
           <li><a href="/docs/"{% if url_segments.first == 'docs' %} class="active"{% endif %}><i class="icon-book"></i> Documentation</a></li>
-          <li><a href="/faq/"{% if url_segments.first == 'faq' %} class="active"{% endif %}><i class="icon-question-sign"></i> FAQ</a></li>
+          <li><a href="/faq"{% if url_segments.first == 'faq' %} class="active"{% endif %}><i class="icon-question-sign"></i> FAQ</a></li>
         </ul>
         <h3 class="muted">{{ site.title | escape }}</h3>
       </div>
@@ -78,7 +78,7 @@
         <p class="pull-right">
           <a href="#" class="btn btn-mini"><i class="icon-chevron-up"></i> Top</a>
         </p>
-        <p>&copy; {{ site.social.name | escape }} | <a href="/sitemap/">Sitemap</a></p>
+        <p>&copy; {{ site.social.name | escape }} | <a href="/sitemap">Sitemap</a></p>
       </footer>
     </div>
 
