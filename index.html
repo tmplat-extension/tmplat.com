@@ -1,6 +1,6 @@
 ---
 layout: page
-keywords: template, browser, extension, addon, homepage, install, open, source
+keywords: tmplat, browser, extension, addon, homepage, install, open, source
 microdata: http://schema.org/WebApplication
 carousel:
   - url: /assets/img/screenshots/en/01.png
@@ -10,7 +10,7 @@ carousel:
   - url: /assets/img/screenshots/en/02.png
     title: Make yourself at home
     property: screenshot
-    caption: Have complete control of how Template works using its amazing options page
+    caption: Have complete control of how tmplat works using its amazing options page
   - url: /assets/img/screenshots/en/03.png
     title: Roll your own
     property: screenshot
@@ -22,7 +22,7 @@ carousel:
   - url: /assets/img/screenshots/en/05.png
     title: Know-how
     property: screenshot
-    caption: Template comes complete with its own fully documented built-in guide so writing your own is as easy as pie
+    caption: tmplat comes complete with its own fully documented built-in guide so writing your own is as easy as pie
 ---
 <div class="hide">
   <link itemprop="applicationCategory SoftwareApplicationCategory" href="http://schema.org/OtherApplication">
@@ -37,7 +37,7 @@ carousel:
     {% if site.extension.file.format %}<meta itemprop="fileFormat" content="{{ site.extension.file.format }}">{% endif %}
     {% if site.extension.file.size %}<meta itemprop="fileSize" content="{{ site.extension.file.size }}">{% endif %}
   {% endif %}
-  <meta itemprop="image" content="{{ '/template/images/logo_72.png' | absolute_url }}">
+  <meta itemprop="image" content="{{ '/assets/img/logo_72.png' | absolute_url }}">
   <meta itemprop="isFamilyFriendly" content="true">
   {% if page.keywords %}<meta itemprop="keywords" content="{{ page.keywords }}">{% endif %}
   <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -56,7 +56,7 @@ carousel:
   <p class="lead">Ultimate productivity browser extension with near unlimited uses</p>
 
   <a href="https://chrome.google.com/webstore/detail/{{ site.extension.chrome.id }}" class="btn btn-large btn-primary chrome_install_button" data-container="body" title="Chrome Web Store"><i class="icon-download-alt icon-white"></i> Install</a>
-  <a href="https://github.com/template-extension" class="btn btn-large btn-success" data-container="body" title="Get involved!"><i class="icon-eye-open icon-white"></i> View Source</a>
+  <a href="https://github.com/tmplat-extension" class="btn btn-large btn-success" data-container="body" title="Get involved!"><i class="icon-eye-open icon-white"></i> View Source</a>
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="donation">
     <input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="hosted_button_id" value="{{ site.paypal_account }}">
@@ -80,7 +80,7 @@ carousel:
 
   <div class="span4">
     <h2>Ready-to-go</h2>
-    <p>Template comes packed with the following predefined templates:</p>
+    <p>tmplat comes packed with the following predefined templates:</p>
     <ul>
       <li><span class="clickable" data-title="URL" data-toggle="popover" data-content-selector="#popover-url">URL</span></li>
       <li><span class="clickable" data-title="Short" data-toggle="popover" data-content-selector="#popover-short">Short</span></li>
@@ -119,7 +119,7 @@ carousel:
     </p>
     <p>
       Coupled with support for keyboard shortcuts and right-click menus makes accessing to your favourite templates even
-      easier and faster. The unique and simple options page empowers you with full control over how Template behaves and
+      easier and faster. The unique and simple options page empowers you with full control over how tmplat behaves and
       management over your templates.
     </p>
   </div>
@@ -129,7 +129,7 @@ carousel:
   <div class="span4">
     <h2>Shortening</h2>
     <p>
-      URL shortening services have become common practise due to the popularity of micro-blogging, so Template comes
+      URL shortening services have become common practise due to the popularity of micro-blogging, so tmplat comes
       prepared with support for these popular services:
     </p>
     <ul>
@@ -152,7 +152,7 @@ carousel:
     <h2>Transparent</h2>
     <p>
       We know it can be daunting for some of you when you see those warnings when installing new extensions and apps, so
-      we put together a detailed breakdown of all the permissions Template requires (even those you aren't warned about)
+      we put together a detailed breakdown of all the permissions tmplat requires (even those you aren't warned about)
       and explained why.
     </p>
     <p><a href="/permissions/" class="btn">Permissions <i class="icon-chevron-right"></i></a></p>
@@ -161,11 +161,10 @@ carousel:
   <div class="span4">
     <h2>Evolution</h2>
     <p>
-      We're always updating Template, trying to make it the absolute best it can be. Version
-      <a href="/changes/#{{ site.extension.version }}" itemprop="softwareVersion version">{{ site.extension.version }}</a>
+      We're always updating tmplat, trying to make it the absolute best it can be. Version <a href="/changes/#{{ site.extension.version }}" itemprop="softwareVersion version">{{ site.extension.version }}</a>
       has come along way since the first release and we're hoping to take it even farther.
     </p>
-    <p><a href="{{ '/changes' | absolute_url }}" class="btn" itemprop="releaseNotes">Changes <i class="icon-chevron-right"></i></a></p>
+    <p><a href="{{ '/changes/' | absolute_url }}" class="btn" itemprop="releaseNotes">Changes <i class="icon-chevron-right"></i></a></p>
   </div>
 </div>
 
@@ -186,11 +185,11 @@ carousel:
   <div class="span4">
     <h2>Knowledge</h2>
     <p>
-      If you want you get learn how Template works you can take a look at the <a href="/docs/">source code documentation</a>
+      If you want you get learn how tmplat works you can take a look at the <a href="/docs/">source code documentation</a>
       for the latest version.
     </p>
     <p>
-      Still want to know more? Feel free to follow us on Twitter, <a href="https://twitter.com/TemplateAddon">@TemplateAddon</a>.
+      Still want to know more? Feel free to follow us on Twitter, <a href="https://twitter.com/tmplat">@tmplat</a>.
       However, I recommend that everyone makes our frequently asked questions their starting point for all enquiries.
     </p>
     <p><a href="/faq/" class="btn">FAQ <i class="icon-chevron-right"></i></a></p>
@@ -199,7 +198,7 @@ carousel:
   <div class="span4">
     <h2>Browsers</h2>
     <p>
-      Currently, Template is only supported on <a href="https://google.com/chrome">Chrome</a> but is planned to be
+      Currently, tmplat is only supported on <a href="https://google.com/chrome">Chrome</a> but is planned to be
       rolled out to <strong>all</strong> modern browsers after the next big release (as we've got a lot planned).
     </p>
   </div>

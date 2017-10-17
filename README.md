@@ -1,6 +1,6 @@
-# template-extension.org
+# tmplat.com
 
-The home for [Template](https://template-extension.org) is hosted on [GitHub Pages](https://pages.github.com) using
+The home for [tmplat](https://tmplat.com) is hosted on [GitHub Pages](https://pages.github.com) using
 [Jekyll](https://jekyllrb.com).
 
 ## Install

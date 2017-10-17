@@ -2,8 +2,8 @@
 layout: page
 title: FAQ
 header: Frequently asked questions
-description: Read through the frequently asked questions for the Template extension
-keywords: template, browser, extension, faq, frequently, asked, questions, answers, support
+description: Read through the frequently asked questions for the tmplat extension
+keywords: tmplat, browser, extension, faq, frequently, asked, questions, answers, support
 ---
 <div class="row-fluid">
   <div class="span12">
@@ -11,7 +11,7 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
     <p>
       Either open the <em>Guide</em> tab or click the link under the content text box within the <em>Templates</em> tab
       on the options page to view the built-in guide for writing templates. If for some crazy reason you don't yet have
-      Template installed (can't understand why not) you can still learn about <a href="/guide/">writing templates here</a>.
+      tmplat installed (can't understand why not) you can still learn about <a href="/guide/">writing templates here</a>.
     </p>
 
     <h2 id="special-pages">Why can't I use some features on certain pages?</h2>
@@ -32,8 +32,8 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
 
     <h2 id="context-menu">What URL is used when I right-click on a page?</h2>
     <p>
-      Well, that absolutely depends what it is you right-clicked on. Template currently checks what you clicked on in
-      the following priority;
+      Well, that absolutely depends what it is you right-clicked on. tmplat currently checks what you clicked on in the
+      following priority;
     </p>
     <ol>
       <li><strong>Link</strong> &raquo; Right-clicking on a link</li>
@@ -51,11 +51,11 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
       We've seen people commenting a lot on extensions in the <a href="https://chrome.google.com/webstore">Chrome Web Store</a>
       about the permissions required by that extension. Most of these comments are negative and usually posted by people
       who do not fully understand the creation of Chrome extensions. For this reason we have <a href="/permissions/">created a breakdown</a>
-      of the permissions used by Template. However, if you have trust issues and don't trust that summary why not <a href="https://github.com/template-extension">look at the code</a>
+      of the permissions used by tmplat. However, if you have trust issues and don't trust that summary why not <a href="https://github.com/tmplat-extension">look at the code</a>
       and see for yourself.
     </p>
 
-    <h2 id="languages">How can I get Template in a different language?</h2>
+    <h2 id="languages">How can I get tmplat in a different language?</h2>
     <p>
       We are using an online system powered by <a href="http://crowdin.net">crowdin</a> to manage translations. Please
       visit <a href="{{ site.translate_url }}">i18n.tmpl.at</a> if you want to help.
@@ -63,8 +63,8 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
 
     <h2 id="errors">Why am I seeing this error message...?</h2>
     <p>
-      Due to the extent of customization options available for Template it's no surprise that something could go wrong.
-      If it does, it's nice to know what that error message means;
+      Due to the extent of customization options available for tmplat it's no surprise that something could go wrong. If
+      it does, it's nice to know what that error message means;
     </p>
     <ul>
       <li>
@@ -75,7 +75,7 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
       </li>
       <li>
         <strong>&quot;The URL is not properly encoded&quot;</strong> &raquo; This occurs if you are attempting to use
-        Template on a URL that is not properly encoded. This is due to the underlying technology used for extract the
+        tmplat on a URL that is not properly encoded. This is due to the underlying technology used for extract the
         information on each URL (e.g. domain, port, parameters). This should be extremely rare and could probably be
         impossible to occur.
       </li>
@@ -109,8 +109,8 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
       </li>
       <li>
         <strong>&quot;<em>&lt;shortener&gt;</em> experienced a problem while shortening <em>&lt;url&gt;</em>&quot;</strong>
-        &raquo; This occurs if the Template is unable to get a successful response from the active URL shortener. This
-        can be for multiple reasons but you should check your configuration for that service first.
+        &raquo; This occurs if the tmplat is unable to get a successful response from the active URL shortener. This can
+        be for multiple reasons but you should check your configuration for that service first.
       </li>
       <li>
         <strong>&quot;<em>&lt;shortener&gt;</em> experienced a problem&quot;</strong> &raquo; This occurs when an
@@ -119,7 +119,7 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
       </li>
     </ul>
 
-    <h2 id="updating">Why isn't Chrome updating Template?</h2>
+    <h2 id="updating">Why isn't Chrome updating tmplat?</h2>
     <p>
       <a href="https://google.com/chrome">Chrome's</a> update frequency is slightly unpredictable (at least in our eyes)
       and we've found that sometimes it updates my extensions as soon as an update becomes available but we've also seen
@@ -131,7 +131,7 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
       <ul>
         <li>Main Menu: Tools &gt; Extensions</li>
         <li>Address Bar: <code>chrome://extensions</code></li>
-        <li>Right-click Template's toolbar icon and select <em>Manage extensions...</em></li>
+        <li>Right-click tmplat's toolbar icon and select <em>Manage extensions...</em></li>
       </ul>
       <li>Ensure that <em>Developer mode</em> in the top right of the page is checked.</li>
       <li>Click the <em>Update extensions now</em> button, et viola!</li>
@@ -166,9 +166,11 @@ keywords: template, browser, extension, faq, frequently, asked, questions, answe
 
     <h2 id="url-copy">What happened to <em>URL Copy</em>?</h2>
     <p>
-      This extension was previously named <em>URL Copy</em> but was renamed in version <a href="/changes/#0.2.0.0">0.2.0.0</a>
-      as it had evolved far beyond just doing that so the name no longer did it justice. <em>Template</em> provides a
-      much more accurate description of the functionality and power of this extension.
+      This extension was previously named <em>URL Copy</em> but was renamed to <em>Template</em> in version <a href="/changes/#0.2.0.0">0.2.0.0</a>
+      as it had evolved far beyond just doing that so the name no longer did it justice. <em>Template</em> provided a
+      much more accurate description of the functionality and power of this extension. However, as of version <a href="/changes/#2.0.0">2.0.0</a>,
+      the extension has been rebranded as <em>tmplat</em>. We found this more unique and memorable, not to mention much
+      easier to find when searching.
     </p>
   </div>
 </div>
