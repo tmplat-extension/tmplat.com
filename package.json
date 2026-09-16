@@ -1,0 +1,51 @@
+{
+  "name": "tmplat.com",
+  "description": "The homepage for the tmplat browser extension",
+  "private": true,
+  "homepage": "https://tmplat.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmplat-extension/tmplat.com.git"
+  },
+  "author": {
+    "name": "airmrcr",
+    "url": "https://github.com/airmrcr"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc -b && vite build && node scripts/clean-urls.js",
+    "check": "tsc -b && pnpm lint:check && pnpm format:check",
+    "dev": "vite",
+    "fix": "pnpm lint && pnpm format",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --fix",
+    "lint:check": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/roboto": "^5.3.0",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": ">=24.15"
+  }
+}

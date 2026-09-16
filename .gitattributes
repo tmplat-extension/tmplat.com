@@ -1,7 +1,4 @@
 * text eol=lf
-*.eot -text
-*.ttf -text
-*.woff -text
 *.gif -text
 *.ico -text
 *.jpeg -text

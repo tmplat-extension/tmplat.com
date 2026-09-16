@@ -1,3 +1,12 @@
-_site/
+dist/
+tsconfig.tsbuildinfo
 
-Gemfile.lock
+node_modules/
+npm-debug.log
+pnpm-debug.log
+
+.DS_Store
+.idea/
+ehthumbs.db
+Icon?
+Thumbs.db
