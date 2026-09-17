@@ -37,11 +37,6 @@ const PERMISSIONS: { name: string; description: ReactNode }[] = [
     ),
   },
   {
-    name: 'identity',
-    description:
-      'Used to securely sign you in to Bitly (for link-shortening templates) via the browser’s built-in OAuth flow.',
-  },
-  {
     name: 'notifications',
     description:
       'Lets tmplat show a desktop notification when a new version is released. This can be turned off in settings.',

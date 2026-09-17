@@ -36,7 +36,6 @@ const PREDEFINED_TEMPLATES = [
 const URL_SHORTENERS = [
   { name: 'spoo.me', description: 'The default choice — no account or configuration needed' },
   { name: 'da.gd', description: 'A no-configuration alternative to spoo.me' },
-  { name: 'Bitly', description: 'Sign in with your Bitly account to shorten links under it' },
   { name: 'YOURLS', description: 'Link to your own self-hosted YOURLS installation' },
 ];
 

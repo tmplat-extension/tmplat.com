@@ -143,13 +143,6 @@ export function Faq() {
               yet in settings.
             </ListItem>
             <ListItem>
-              <strong>
-                &quot;<em>&lt;shortener&gt;</em> is no longer authenticated&quot;
-              </strong>{' '}
-              &raquo; Your sign-in with that shortener (e.g. Bitly) has expired or been revoked; reconnect it in
-              settings.
-            </ListItem>
-            <ListItem>
               <strong>&quot;Cannot shorten an invalid URL&quot;</strong> and{' '}
               <strong>
                 &quot;<em>&lt;shortener&gt;</em> returned an unexpected response&quot;
