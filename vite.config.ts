@@ -37,6 +37,7 @@ export default defineConfig({
         faq: resolve(import.meta.dirname, 'faq.html'),
         permissions: resolve(import.meta.dirname, 'permissions.html'),
         changes: resolve(import.meta.dirname, 'changes.html'),
+        privacy: resolve(import.meta.dirname, 'privacy.html'),
         license: resolve(import.meta.dirname, 'license.html'),
         sitemap: resolve(import.meta.dirname, 'sitemap.html'),
         notFound: resolve(import.meta.dirname, '404.html'),

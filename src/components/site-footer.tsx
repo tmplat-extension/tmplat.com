@@ -17,6 +17,9 @@ export function SiteFooter() {
             &copy; tmplat
           </Typography>
           <Stack direction="row" spacing={3}>
+            <Link href="/privacy" variant="body2" color="text.secondary" underline="hover">
+              Privacy
+            </Link>
             <Link href="/license" variant="body2" color="text.secondary" underline="hover">
               License
             </Link>

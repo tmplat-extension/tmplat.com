@@ -8,7 +8,7 @@ import { existsSync, mkdirSync, renameSync } from 'node:fs';
 import { join } from 'node:path';
 
 const DIST_DIR = join(import.meta.dirname, '..', 'dist');
-const CLEAN_URL_PAGES = ['faq', 'permissions', 'changes', 'license', 'sitemap'];
+const CLEAN_URL_PAGES = ['faq', 'permissions', 'changes', 'privacy', 'license', 'sitemap'];
 
 for (const page of CLEAN_URL_PAGES) {
   const source = join(DIST_DIR, `${page}.html`);

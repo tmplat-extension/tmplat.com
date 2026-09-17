@@ -9,6 +9,7 @@ const PAGES = [
   { href: '/faq', label: 'Frequently Asked Questions' },
   { href: '/permissions', label: 'Permissions' },
   { href: '/changes', label: 'Changelog' },
+  { href: '/privacy', label: 'Privacy Policy' },
   { href: '/license', label: 'License' },
 ];
 

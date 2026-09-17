@@ -87,6 +87,15 @@ export function Faq() {
           </Typography>
         </Question>
 
+        <Question id="privacy" title="Do you collect any of my data?">
+          <Typography>
+            No. tmplat has no servers, no accounts, and no analytics &mdash; your templates and settings stay on your
+            device (and in your own browser&apos;s sync, if you use it). Our <Link href="/privacy">privacy policy</Link>{' '}
+            spells out exactly what happens to your data, including the one case where anything leaves your device: URL
+            shortening, which only happens when you run a template that asks for it.
+          </Typography>
+        </Question>
+
         <Question id="languages" title="How can I get tmplat in a different language?">
           <Typography>
             Translations are community-driven and managed through{' '}
@@ -190,9 +199,9 @@ export function Faq() {
             one step.
           </Typography>
           <Typography>
-            The Settings dialog (general, notifications, appearance, analytics, URL shorteners, logging) is the one
-            place that still needs an explicit <em>Apply</em> or <em>Save</em> &mdash; if you try to close it with
-            unsaved changes, you&apos;ll be prompted to save, discard, or go back.
+            The Settings dialog (general, notifications, appearance, URL shorteners, logging) is the one place that
+            still needs an explicit <em>Apply</em> or <em>Save</em> &mdash; if you try to close it with unsaved changes,
+            you&apos;ll be prompted to save, discard, or go back.
           </Typography>
         </Question>
 
