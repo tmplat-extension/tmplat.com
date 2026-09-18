@@ -39,10 +39,10 @@ export function Faq() {
         <Question id="special-pages" title="Why can't I use some features on certain pages?">
           <Typography>
             Browser extensions can&apos;t run on certain restricted pages, so some features (like keyboard shortcuts and
-            variables extracted from the page itself) won&apos;t work there. This includes the Chrome Web Store, and
-            equivalent listing/account pages for other browsers (e.g. Firefox&apos;s Add-ons site and account pages, or
-            Microsoft Edge&apos;s Add-ons site) &mdash; anywhere the browser itself blocks extensions from running for
-            security reasons. If you try to run a template on one of these pages you&apos;ll see &quot;
+            variables extracted from the page itself) won&apos;t work there. This includes the Chrome Web Store and the
+            Microsoft Edge Add-ons site, along with equivalent listing and account pages in other browsers &mdash;
+            anywhere the browser itself blocks extensions from running for security reasons. If you try to run a
+            template on one of these pages you&apos;ll see &quot;
             <em>&lt;template&gt;</em> could not be executed on a restricted tab&quot;.
           </Typography>
         </Question>
@@ -169,14 +169,15 @@ export function Faq() {
           </List>
         </Question>
 
-        <Question id="updating" title="Why isn't Chrome updating tmplat?">
+        <Question id="updating" title="Why isn't my browser updating tmplat?">
           <Typography>
-            Chrome&apos;s update frequency can be unpredictable. You can force a check via a little-known method:
+            Extension update checks can be unpredictable. You can force one via a little-known method:
           </Typography>
           <List sx={{ listStyleType: 'disc', pl: 4, '& .MuiListItem-root': { display: 'list-item', p: 0 } }}>
             <ListItem>
-              Open the Extensions page (Menu &rsaquo; Extensions, address bar <code>chrome://extensions</code>, or
-              right-click tmplat&apos;s toolbar icon and choose <em>Manage extensions&hellip;</em>)
+              Open the Extensions page (Menu &rsaquo; Extensions, address bar <code>chrome://extensions</code> on Chrome
+              or <code>edge://extensions</code> on Edge, or right-click tmplat&apos;s toolbar icon and choose{' '}
+              <em>Manage extensions&hellip;</em>)
             </ListItem>
             <ListItem>
               Turn on <em>Developer mode</em> in the top-right corner

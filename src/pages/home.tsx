@@ -164,11 +164,15 @@ export function Home() {
 
         <Feature title="Browsers">
           <Typography color="text.secondary">
-            Currently, tmplat is only supported on{' '}
+            tmplat is supported on{' '}
             <Link href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
               Chrome
+            </Link>{' '}
+            and{' '}
+            <Link href="https://microsoft.com/edge" target="_blank" rel="noopener noreferrer">
+              Microsoft Edge
             </Link>
-            .
+            . The Install button above takes you to the right store for the browser you&apos;re using.
           </Typography>
         </Feature>
       </Box>
