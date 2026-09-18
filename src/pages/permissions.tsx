@@ -21,8 +21,8 @@ const PERMISSIONS: { name: string; description: ReactNode }[] = [
     name: 'cookies',
     description: (
       <>
-        Lets templates read cookies from the page you&apos;re on, for template variables like <code>cookie</code> and{' '}
-        <code>cookies</code>.
+        Lets templates read cookies from the page you&apos;re on, for template variables like <code>cookie</code>,{' '}
+        <code>cookies</code> and <code>cookieNames</code>.
       </>
     ),
   },
@@ -39,7 +39,7 @@ const PERMISSIONS: { name: string; description: ReactNode }[] = [
   {
     name: 'notifications',
     description:
-      'Lets tmplat show a desktop notification when a new version is released. This can be turned off in settings.',
+      'Lets tmplat show a desktop notification each time you run a template — confirming it was copied, or explaining why it failed — and when a new version is released. Both can be turned off in settings.',
   },
   {
     name: 'offscreen',
@@ -54,7 +54,7 @@ const PERMISSIONS: { name: string; description: ReactNode }[] = [
   {
     name: 'storage',
     description:
-      'Lets tmplat save your templates, settings, and sign-in state on your device, and sync them across your browser installs.',
+      'Lets tmplat save your templates and settings, along with any credentials you enter for a URL shortener that needs them. Your settings sync across your browser installs; your templates are kept on this device only, since they would quickly outgrow the much smaller quota that synced storage allows.',
   },
   {
     name: 'tabs',
@@ -107,11 +107,12 @@ export function Permissions() {
             http://*/*, https://*/*
           </Typography>
           <Typography color="text.secondary">
-            Needed so tmplat can read basic page details (title, URL, selected text, links, and more) on whichever
-            website you&apos;re on when you run a template, since templates aren&apos;t limited to specific sites. A
-            separate, much narrower script also runs only on tmplat.com itself, purely to swap the &quot;Install&quot;
-            button on this site to &quot;Installed&quot; once you already have the extension &mdash; it doesn&apos;t
-            read anything else on this page.
+            Needed so tmplat can read basic page details (title, URL, selected text, links, cookies, and more) on
+            whichever website you&apos;re on when you run a template, since templates aren&apos;t limited to specific
+            sites. It also covers the requests tmplat makes to a URL shortening service when a template shortens a link,
+            which may be one you&apos;ve configured yourself. A separate, much narrower script also runs only on
+            tmplat.com itself, purely to swap the &quot;Install&quot; button on this site to &quot;Installed&quot; once
+            you already have the extension &mdash; it doesn&apos;t read anything else on this page.
           </Typography>
         </Box>
       </Stack>
